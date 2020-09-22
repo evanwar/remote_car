@@ -45,7 +45,7 @@ class _DriverState extends State<Driver> {
                   child: Icon(Icons.arrow_drop_up),
                   onPressed: () {
                     connection.output
-                        .add(new Uint8List.fromList("UP".codeUnits));
+                        .add(new Uint8List.fromList("DOWN".codeUnits));
                   }),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -55,7 +55,7 @@ class _DriverState extends State<Driver> {
                     child: Icon(Icons.arrow_left),
                     onPressed: () {
                       connection.output
-                          .add(new Uint8List.fromList("LEFT".codeUnits));
+                          .add(new Uint8List.fromList("RIGHT".codeUnits));
                     },
                   ),
                   FloatingActionButton(
@@ -72,7 +72,7 @@ class _DriverState extends State<Driver> {
                     child: Icon(Icons.arrow_right),
                     onPressed: () {
                       connection.output
-                          .add(new Uint8List.fromList("RIGHT".codeUnits));
+                          .add(new Uint8List.fromList("LEFT".codeUnits));
                     },
                   )
                 ],
@@ -82,7 +82,7 @@ class _DriverState extends State<Driver> {
                   child: Icon(Icons.arrow_drop_down),
                   onPressed: () {
                     connection.output
-                        .add(new Uint8List.fromList("DOWN".codeUnits));
+                        .add(new Uint8List.fromList("UP".codeUnits));
                   })
             ],
           ),
